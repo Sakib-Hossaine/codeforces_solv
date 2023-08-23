@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    
+    while(t--){ // with this line , i deaclared ammount of input.
+
+int n,k,c=0,x;
+cin>>n>>k;
+for(int i=1;i<n+1;i++)
+{
+cin>>x;
+c+=i%k!=x%k; //here i am doing c=c+ and I am modding i with k and it can't be equal with x mod k
+
+
+      }
+      // cout<<c; in C , we will get the value . this line i use just for testing.
+
+cout<<((c>2)?-1:c/2)<<endl;
+// in this line i used a short cut process ; we can test condition with that. the condition is" if c i greater than 2 , print -1. else devide c with 2. 
+}
+return 0;
+}
+
+//best of luck. happy coding :) 
